@@ -2,9 +2,12 @@ var Home = React.createClass({
 
   render: function() {
     return (
-      <div>
+      <div id='homeContainer'>
       	<Nav/>
-      	Welcome!
+      	<main>
+      		Welcome!
+      	</main>
+      	<Footer/>
       </div>
     );
   }
