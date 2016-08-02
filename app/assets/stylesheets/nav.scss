@@ -1,0 +1,20 @@
+nav {
+	margin-top: 2em;
+	text-align: center;
+
+	#logo {
+		color: #f27461;
+		font-size: 4em;
+	}
+
+	menu {
+		background: #FFFFCC;
+		padding: 1.5em;
+
+		a {
+			margin: 2em;
+			color: #f27461;
+			text-decoration: bold;
+		}
+	}
+}
