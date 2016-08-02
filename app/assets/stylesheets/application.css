@@ -7,6 +7,15 @@
 
 
 /* Application-wide Styles */
+html {
+	height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 a {
 	text-decoration: none;
