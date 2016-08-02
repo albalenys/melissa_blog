@@ -7,14 +7,12 @@
 
 
 /* Application-wide Styles */
-html {
-	height: 100vh;
-}
+
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 a {
@@ -22,5 +20,7 @@ a {
 }
 
 main {
+	flex: 1 0 auto;
 	padding: 2em;
+	min-height: 100vh;
 }
