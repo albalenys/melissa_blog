@@ -1,0 +1,31 @@
+/* Application-wide Styles */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	flex: 1 0 auto;
+	padding: 2em;
+	min-height: 100vh;
+}
+
+form  {
+	display: flex;
+	flex-direction: column;
+
+	input {
+		flex: 1;
+		color: #87D9EB;
+	}
+}
+
+h1 {
+	color: #999;
+}
