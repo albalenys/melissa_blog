@@ -1,0 +1,76 @@
+@import "variables";
+@import "normalize";
+@import "footer";
+@import "nav";
+
+/* Application-wide Styles */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	flex: 1 0 auto;
+	padding: 2em;
+	min-height: 100vh;
+}
+
+form  {
+	display: flex;
+	flex-direction: column;
+
+	input {
+		flex: 1;
+		width: 40%;
+		margin: auto;
+	}
+
+	input:focus { 
+    outline: $blue solid 1px;
+	}
+
+	input[type="submit"] {
+		background: $blue;
+		border: none;
+		border-radius: 1em;
+		color: $yellow;
+		cursor: pointer;
+	}
+}
+
+/* Placeholder styling - seperated for cross-browser compatibility */
+::-webkit-input-placeholder {
+   color: $gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $gray;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gray;  
+}
+
+:-ms-input-placeholder {  
+   color: $gray;  
+}
+
+h1 {
+	color: $gray;
+	text-align: center;
+	font-weight: normal;
+}
+
+#error {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	color: $peach;
+	margin-bottom: 2em;
+}
