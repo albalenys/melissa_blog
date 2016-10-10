@@ -31,6 +31,10 @@ form  {
 		margin: auto;
 	}
 
+	input:focus { 
+    outline: $blue solid 1px;
+	}
+
 	input[type="submit"] {
 		background: $blue;
 		border: none;
