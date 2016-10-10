@@ -1,3 +1,8 @@
+@import "variables";
+@import "normalize";
+@import "footer";
+@import "nav";
+
 /* Application-wide Styles */
 
 body {
@@ -27,32 +32,33 @@ form  {
 	}
 
 	input[type="submit"] {
-		background: #87D9EB;
+		background: $blue;
 		border: none;
 		border-radius: 1em;
-		color: #FFFFCC;
+		color: $yellow;
 		cursor: pointer;
 	}
 }
 
+/* Placeholder styling - seperated for cross-browser compatibility */
 ::-webkit-input-placeholder {
-   color: red;
+   color: $gray;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: red;  
+   color: $gray;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: red;  
+   color: $gray;  
 }
 
 :-ms-input-placeholder {  
-   color: red;  
+   color: $gray;  
 }
 
 h1 {
-	color: #999;
+	color: $gray;
 	text-align: center;
 	font-weight: normal;
 }

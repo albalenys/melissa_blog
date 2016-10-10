@@ -3,17 +3,17 @@ nav {
 	text-align: center;
 
 	#logo {
-		color: #87D9EB;
+		color: $blue;
 		font-size: 4em;
 	}
 
 	menu {
-		background: #FFFFCC;
+		background: $yellow;
 		padding: 1.5em;
 
 		a {
 			margin: 2em;
-			color: #f27461;
+			color: $peach;
 			text-decoration: bold;
 		}
 	}
