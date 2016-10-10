@@ -14,7 +14,7 @@ gem 'react-rails'
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
 end
 
 group :development do
