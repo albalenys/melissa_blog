@@ -2,14 +2,12 @@ var Login = React.createClass({
 
   render: function() {
     return (
-    	<main>
-      	<h1>Log In</h1>
-
-      	<form action="#">
-      		Username: <input type="text" name="username"></input>
-      		Password: <input type="password" name="password"></input>
-      		<input type="submit"></input>
-      	</form>
+      <main>
+        <form action="#">
+          <input type="text" name="username" placeholder="username"></input>
+          <input type="password" name="password" placeholder="password"></input>
+          <input type="submit" value="Log In"></input>
+        </form>
       </main>
     );
   }

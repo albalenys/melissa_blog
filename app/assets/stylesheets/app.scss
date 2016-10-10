@@ -22,10 +22,37 @@ form  {
 
 	input {
 		flex: 1;
-		color: #87D9EB;
+		width: 40%;
+		margin: auto;
 	}
+
+	input[type="submit"] {
+		background: #87D9EB;
+		border: none;
+		border-radius: 1em;
+		color: #FFFFCC;
+		cursor: pointer;
+	}
+}
+
+::-webkit-input-placeholder {
+   color: red;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: red;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+
+:-ms-input-placeholder {  
+   color: red;  
 }
 
 h1 {
 	color: #999;
+	text-align: center;
+	font-weight: normal;
 }
