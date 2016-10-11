@@ -4,7 +4,12 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
 
-  get 'tags' => 'shared#tags'
+  get 'tags/index' => 'tags#index'
+  get 'tag/:id' => 'tags#show'
+
+  # Remove once backend framework is added.
+  get 'get/tags' => 'tags#tags'
+  get 'get/tag_posts/:id' => 'tags#posts_by_tag'
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

@@ -13,7 +13,7 @@ var Nav = React.createClass({
 
   getAllTags: function() {
     return $.ajax({
-        url: '/tags',
+        url: '/get/tags',
         dataType: 'json'
     });
   },
@@ -22,7 +22,7 @@ var Nav = React.createClass({
     var tags = [];
 
     this.state.tags.forEach(function(tag) {
-        tags.push(<a key={tag.id} href='#'>{tag.name}</a>);
+        tags.push(<a key={tag.id} href={'/tag/' + tag.id}>{tag.name}</a>);
     });
 
     return (
