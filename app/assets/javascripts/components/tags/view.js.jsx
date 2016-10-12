@@ -1,5 +1,5 @@
 var Tag = React.createClass({
-	 getInitialState: function() {
+	getInitialState: function() {
     return({ 
       tag: '',
       posts: [] 
@@ -30,7 +30,11 @@ var Tag = React.createClass({
   	var posts = [];
 
     this.state.posts.forEach(function(post) {
-      posts.push(<a key={post.id}>{post.title}</a>);
+      posts.push(
+        <p>
+          <a key={post.id} href={"/posts/" + post.id}>{post.title}</a>
+        </p>
+      );
     });
 
     return (

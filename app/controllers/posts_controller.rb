@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def new
-    render component: 'NewPostForm'
+    render component: "NewPostForm"
   end
 
   def create
@@ -12,10 +12,15 @@ class PostsController < ApplicationController
         post.tags << tag
       end
 
-      redirect_to "/"
+      redirect_to "/posts/#{post.id}"
     else
-      render component: 'NewPostForm', props: {error: 'Must add both title and body to new post.'}
+      render component: "NewPostForm", props: {error: "Must add both title and body to new post."}
     end
+  end
+
+  def show
+    post = Post.find(params[:id])
+    render component: "Post", props: post
   end
 
   private

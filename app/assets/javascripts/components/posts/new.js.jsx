@@ -1,5 +1,5 @@
 var NewPostForm = React.createClass({
-	 getInitialState: function() {
+	getInitialState: function() {
     return {token: ''}
   },
 
@@ -11,11 +11,12 @@ var NewPostForm = React.createClass({
   render: function() {
     return (
       <main>
+        <h3>New Post</h3>
       	<Error msg={this.props.msg}/>
 
       	<form action="/posts" method="post">
           <input type="hidden" name="authenticity_token" value={this.state.token}/>
-          <input type="tags" name="tags" placeholder="tags"/>
+          <input type="tags" name="tags" placeholder="tags(seperated by ,)" required/>
           <input type="text" name="post[title]" placeholder="title" required/>
           <textarea name="post[body]" placeholder="body" required/>
           <input type="submit" value="Submit"></input>

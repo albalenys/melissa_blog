@@ -2,6 +2,7 @@
 @import "normalize";
 @import "footer";
 @import "nav";
+@import "components";
 
 /* Application-wide Styles */
 
@@ -37,6 +38,10 @@ form  {
 		}
 	}
 
+	textarea {
+		height: 15em;
+	}
+
 	input[type="submit"] {
 		background: $blue;
 		border: none;
@@ -63,7 +68,7 @@ form  {
    color: $gray;  
 }
 
-h1 {
+h1, h3 {
 	color: $gray;
 	text-align: center;
 	font-weight: normal;
@@ -74,10 +79,6 @@ h1 {
 	text-align: center;
 }
 
-#error {
-	width: 50%;
-	text-align: center;
-	margin: auto;
-	color: $peach;
-	margin-bottom: 2em;
+hr {
+	border-top: 1px solid $ltgray;
 }
