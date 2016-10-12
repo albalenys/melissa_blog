@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   get 'tags/index' => 'tags#index'
   get 'tag/:id' => 'tags#show'
 
-  # Remove once backend framework is added.
+  get 'posts/new' => 'posts#new'
+
+  # -- Ajax routes --
   get 'get/tags' => 'tags#tags'
   get 'get/tag_posts/:id' => 'tags#posts_by_tag'
 

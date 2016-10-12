@@ -2,9 +2,16 @@ nav {
 	margin-top: 2em;
 	text-align: center;
 
-	#logo {
+	#logo a{
 		color: $blue;
 		font-size: 4em;
+	}
+
+	#new-post-link {
+		background: $blue;
+		color: #fff;
+		padding: 1em;
+		height: 100%;
 	}
 
 	menu {
