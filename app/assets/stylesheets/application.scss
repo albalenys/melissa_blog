@@ -2,6 +2,7 @@
 @import "normalize";
 @import "footer";
 @import "nav";
+@import "components";
 
 /* Application-wide Styles */
 
@@ -74,10 +75,6 @@ h1 {
 	text-align: center;
 }
 
-#error {
-	width: 50%;
-	text-align: center;
-	margin: auto;
-	color: $peach;
-	margin-bottom: 2em;
+hr {
+	border-top: 1px solid $ltgray;
 }

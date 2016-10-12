@@ -19,8 +19,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    #@post = Post.find(params[:id])
-    render component: 'Post'
+    post = Post.find(params[:id])
+    render component: 'Post', props: post
   end
 
   private

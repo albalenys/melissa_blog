@@ -1,5 +1,5 @@
 var Tag = React.createClass({
-	 getInitialState: function() {
+	getInitialState: function() {
     return({ 
       tag: '',
       posts: [] 
