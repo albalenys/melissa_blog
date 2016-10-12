@@ -1,5 +1,5 @@
 var NewPostForm = React.createClass({
-	 getInitialState: function() {
+	getInitialState: function() {
     return {token: ''}
   },
 

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get 'posts/new' => 'posts#new'
   post 'posts' => 'posts#create'
+  get 'posts/:id' => 'posts#show'
 
   # -- Ajax routes --
   get 'get/tags' => 'tags#tags'

@@ -30,7 +30,7 @@ var Tag = React.createClass({
   	var posts = [];
 
     this.state.posts.forEach(function(post) {
-      posts.push(<a key={post.id}>{post.title}</a>);
+      posts.push(<a key={post.id} href={"/posts/" + post.id}>{post.title}</a>);
     });
 
     return (
