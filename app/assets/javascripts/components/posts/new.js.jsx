@@ -11,6 +11,7 @@ var NewPostForm = React.createClass({
   render: function() {
     return (
       <main>
+        <h3>New Post</h3>
       	<Error msg={this.props.msg}/>
 
       	<form action="/posts" method="post">

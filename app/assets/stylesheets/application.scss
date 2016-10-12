@@ -38,6 +38,10 @@ form  {
 		}
 	}
 
+	textarea {
+		height: 15em;
+	}
+
 	input[type="submit"] {
 		background: $blue;
 		border: none;
@@ -64,7 +68,7 @@ form  {
    color: $gray;  
 }
 
-h1 {
+h1, h3 {
 	color: $gray;
 	text-align: center;
 	font-weight: normal;
