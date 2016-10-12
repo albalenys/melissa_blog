@@ -11,6 +11,8 @@ var NewPostForm = React.createClass({
   render: function() {
     return (
       <main>
+      	<Error msg={this.props.msg}/>
+      	
       	<form action="/posts" method="post">
           <input type="hidden" name="authenticity_token" value={this.state.token}/>
           <input type="text" name="post[title]" placeholder="title" required/>

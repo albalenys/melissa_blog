@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:admin_id] = admin.id
       redirect_to root_path
     else
-      render component: 'Login', props: {error: 'Invalid username or password.'}
+      render component: 'Login', props: {msg: 'Invalid username or password.'}
     end
   end
 end

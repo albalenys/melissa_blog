@@ -9,8 +9,7 @@ class PostsController < ApplicationController
     if post.save
       redirect_to "/"
     else
-      #flash[:error] = "Invalid input: must include both title and content."
-      redirect_to "/"
+      render component: 'NewPostForm', props: {error: 'Must add both title and body to new post.'}
     end
   end
 

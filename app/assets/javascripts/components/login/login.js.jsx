@@ -11,7 +11,8 @@ var Login = React.createClass({
   render: function() {
     return (
       <main>
-        <div id="error">{this.props.error}</div>
+        <Error msg={this.props.msg}/>
+
         <div className="center">
           <img src="http://i126.photobucket.com/albums/p103/julieanne718/animation-cat-sleeping.gif"/>
         </div>
