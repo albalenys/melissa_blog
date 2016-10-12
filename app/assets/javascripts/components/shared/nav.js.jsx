@@ -29,7 +29,7 @@ var Nav = React.createClass({
       <nav>
         <span id="logo"><a href="/">Melissa</a></span>
         <menu>
-          <a id="new-post-link" href="#">New Post</a>
+          <a id="new-post-link" href="/posts/new">New Post</a>
         	<a href="/">Home</a>
           {tags}
         </menu>

@@ -16,9 +16,9 @@ var Login = React.createClass({
           <img src="http://i126.photobucket.com/albums/p103/julieanne718/animation-cat-sleeping.gif"/>
         </div>
         <form action="/login" method="post">
-          <input name="authenticity_token" type="hidden" value={this.state.token}/>
-          <input type="text" name="username" placeholder="username"/>
-          <input type="password" name="password" placeholder="password"/>
+          <input type="hidden" name="authenticity_token" value={this.state.token}/>
+          <input type="text" name="username" placeholder="username" required/>
+          <input type="password" name="password" placeholder="password" required/>
           <input type="submit" value="Log In"></input>
         </form>
       </main>

@@ -25,14 +25,16 @@ form  {
 	display: flex;
 	flex-direction: column;
 
-	input {
+	input, textarea {
 		flex: 1;
 		width: 40%;
 		margin: auto;
-	}
+		border: 1px solid $ltgray;
 
-	input:focus { 
-    outline: $blue solid 1px;
+		&:focus, &:focus { 
+	    outline: none;
+	    border: 1px solid $blue;
+		}
 	}
 
 	input[type="submit"] {
