@@ -2,9 +2,15 @@ nav {
 	margin-top: 2em;
 	text-align: center;
 
-	#logo a{
+	#logo a {
 		color: $blue;
 		font-size: 4em;
+	}
+
+	#login-info {
+		h5 {
+			font-weight: normal;
+		}
 	}
 
 	#new-post-link {

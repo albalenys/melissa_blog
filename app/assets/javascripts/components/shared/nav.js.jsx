@@ -39,6 +39,14 @@ class Nav extends React.Component {
         <span id="logo">
           <a href="/">Melissa</a>
         </span>
+        {(this.props.current_user) ?
+          <div id="login-info">
+            <h5>Welcome back, {this.props.current_user.username}</h5>
+            <a href='#'>Logout</a>
+          </div>
+        :
+          null
+        }
         <menu>
           {(this.props.current_user) ?
             <a id="new-post-link" href="/posts/new">New Post</a>
