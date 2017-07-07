@@ -41,8 +41,9 @@ class Nav extends React.Component {
         </span>
         {(this.props.current_user) ?
           <div id="login-info">
-            <h5>Welcome back, {this.props.current_user.username}</h5>
-            <a href='#'>Logout</a>
+            <h5>
+              Welcome back, {this.props.current_user.username} [ <a href='/logout' data-method="delete">Logout</a> ]
+            </h5>
           </div>
         :
           null
