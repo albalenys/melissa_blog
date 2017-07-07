@@ -1,8 +1,7 @@
-var Error = React.createClass({
-
-  render: function() {
+class Error extends React.Component {
+  render() {
     return (
       <div id="error">{this.props.msg}</div>
     );
   }
-});
+};

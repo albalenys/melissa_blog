@@ -1,17 +1,17 @@
-var Post = React.createClass({
-  render: function() {
-    let props = this.props;
+class Post extends React.Component {
+  render() {
+    let post = this.props.post;
 
     return (
       <main id="post">
         <div id="heading">
-        	<h3>{props.title}</h3><br/>
+        	<h3>{post.title}</h3><br/>
           Published by Melissa De Los Santos<br/>
-          {props.created_at}
+          {post.created_at}
         </div>
         <hr/>
-        {props.body}
+        {post.body}
       </main>
     );
   }
-});
+};
