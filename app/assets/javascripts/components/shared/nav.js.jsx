@@ -25,7 +25,13 @@ class Nav extends React.Component {
     var tags = [];
 
     this.state.tags.forEach((tag) => {
-      tags.push(<a key={tag.id} href={"/tag/" + tag.id}>{tag.name}</a>);
+      let isActive = location.pathname === `/tag/${tag.id}`;
+
+      tags.push(
+        <a key={tag.id} href={"/tag/" + tag.id} id={isActive ? 'active' : null}>
+          {tag.name}
+        </a>
+      );
     });
 
     return (

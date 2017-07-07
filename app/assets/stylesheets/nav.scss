@@ -21,7 +21,11 @@ nav {
 		a {
 			margin: 2em;
 			color: $peach;
-			text-decoration: bold;
+		}
+
+		#active {
+			color: $blue;
+			font-weight: bold;
 		}
 	}
 }
