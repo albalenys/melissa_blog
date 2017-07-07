@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-    render component: 'Login'
+    #..
   end
 
   def create

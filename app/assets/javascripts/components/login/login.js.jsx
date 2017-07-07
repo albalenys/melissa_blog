@@ -1,14 +1,17 @@
-var Login = React.createClass({
-  getInitialState: function() {
-    return {token: ''}
-  },
+class Login extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      token: ''
+    };
+  }
 
-  componentDidMount: function(event) {
+  componentDidMount(event) {
     var token = document.querySelector('meta[name=csrf-token]').content;
     this.setState({token: token});
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <main>
         <Error msg={this.props.msg}/>
@@ -26,4 +29,4 @@ var Login = React.createClass({
       </main>
     );
   }
-});
+};
