@@ -1,6 +1,5 @@
-var Footer = React.createClass({
-
-  render: function() {
+class Footer extends React.Component {
+  render() {
     return (
       <footer>
       	<a href='#'>ABOUT ME</a>
@@ -9,4 +8,4 @@ var Footer = React.createClass({
       </footer>
     );
   }
-});
+};

@@ -1,6 +1,6 @@
 class TagsController < ApplicationController
   def show
-    render component: 'Tag'
+    #..
   end
 
   # -- Ajax Routes --

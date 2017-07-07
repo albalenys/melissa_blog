@@ -1,12 +1,13 @@
-var Tag = React.createClass({
-	getInitialState: function() {
-    return({ 
+class Tag extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       tag: '',
-      posts: [] 
-    })
-  },
+      posts: []
+    };
+  }
 
-  componentDidMount: function() {
+  componentDidMount() {
     var self = this;
 
     this.getTagPosts().done(function(json) {
@@ -15,18 +16,18 @@ var Tag = React.createClass({
         posts: json.posts 
       })
     });
-  },
+  }
 
-  getTagPosts: function() {
+  getTagPosts() {
   	var tagId = location.pathname.split('/')[2];
 
     return $.ajax({
         url: '/get/tag_posts/' + tagId,
         dataType: 'json'
     });
-  },
+  }
 
-  render: function() {
+  render() {
   	var posts = [];
 
     this.state.posts.forEach(function(post) {
@@ -44,4 +45,4 @@ var Tag = React.createClass({
       </main>
     );
   }
-});
+};

@@ -1,14 +1,17 @@
-var NewPostForm = React.createClass({
-	getInitialState: function() {
-    return {token: ''}
-  },
+class NewPostForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      token: ''
+    };
+  }
 
-  componentDidMount: function(event) {
+  componentDidMount(event) {
     var token = document.querySelector('meta[name=csrf-token]').content;
     this.setState({token: token});
-  },
+  }
 
-  render: function() {
+  render() {
     return (
       <main>
         <h3>New Post</h3>
@@ -24,4 +27,4 @@ var NewPostForm = React.createClass({
       </main>
     );
   }
-});
+};

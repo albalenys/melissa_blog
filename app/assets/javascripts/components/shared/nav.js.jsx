@@ -1,28 +1,31 @@
-var Nav = React.createClass({
-  getInitialState: function() {
-    return({ tags: [] })
-  },
+class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tags: []
+    };
+  }
 
-  componentDidMount: function() {
+  componentDidMount() {
     var self = this;
 
     this.getAllTags().done(function(json) {
       self.setState({ tags: json })
     });
-  },
+  }
 
-  getAllTags: function() {
+  getAllTags() {
     return $.ajax({
-        url: "/get/tags",
-        dataType: "json"
+      url: "/get/tags",
+      dataType: "json"
     });
-  },
+  }
 
-  render: function() {
+  render() {
     var tags = [];
 
     this.state.tags.forEach(function(tag) {
-        tags.push(<a key={tag.id} href={"/tag/" + tag.id}>{tag.name}</a>);
+      tags.push(<a key={tag.id} href={"/tag/" + tag.id}>{tag.name}</a>);
     });
 
     return (
@@ -35,4 +38,4 @@ var Nav = React.createClass({
       </nav>
     );
   }
-});
+};
