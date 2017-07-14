@@ -1,6 +1,12 @@
+branding: false
+browser_spellcheck: true
+statusbar: false
+menubar: false
 toolbar:
-  - styleselect | bold italic | undo redo
-  - image | link
+  - fullscreen styleselect | bold italic underline | alignleft aligncenter alignright | forecolor backcolor | undo redo | table image link
 plugins:
+  - fullscreen
+  - textcolor
+  - table
   - image
   - link
