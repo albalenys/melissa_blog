@@ -21,7 +21,7 @@ class NewPostForm extends React.Component {
           <input type="hidden" name="authenticity_token" value={this.state.token}/>
           <input type="tags" name="tags" placeholder="tags(seperated by ,)" required/>
           <input type="text" name="post[title]" placeholder="title" required/>
-          <textarea name="post[body]" placeholder="body" required/>
+          <textarea className="tinymce" name="post[body]" placeholder="body" required/>
           <input type="submit" value="Submit"></input>
         </form>
       </main>
